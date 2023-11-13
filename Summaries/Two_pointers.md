@@ -8,9 +8,9 @@
 למשל נתון המערך: `[1,3,4,7,12,15]`\
 ומבקשים מאיתנו למצוא שני מספרים במערך אשר ביחד מתסכמים למספר `10`.  
 הפתרון שלנו יהיה 3 ו 7 מפני שאילו מספרים שנתונים במערך וכאשר מחברים אותם, שווים ל10.  
-נראה שאפשר לפתור בעזרת two pointers, בגלל שאנו מנסים למצוא שני איברים מתוך רשימה אשר עונים על תנאי מסויים.  
+נראה שאפשר לפתור בעזרת two pointers, בגלל שאנו מנסים למצוא שני איברים מתוך רשימה אשר ביחד עונים על תנאי מסויים.  
 ```python 
-def twoSum(self, numbers: List[int], target: int) -> List[int]:
+def findTwoElementsEqualToTarget(self, numbers: List[int], target: int) -> List[int]:
         left = 0
         right = len(numbers) - 1
         while right > left:
