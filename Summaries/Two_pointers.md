@@ -11,15 +11,20 @@
 נראה שאפשר לפתור בעזרת two pointers, בגלל שאנו מנסים למצוא שני איברים מתוך רשימה אשר ביחד עונים על תנאי מסויים.  
 ```python 
 def findTwoElementsEqualToTarget(self, numbers: List[int], target: int) -> List[int]:
+        #ניצור שתי משתנים, אחד של תחילת הרשימה והשני בסופה
         left = 0
         right = len(numbers) - 1
+        #ניצור פונקציה שתפעל כל עוד הנקודות לא מתנגשות
         while right > left:
             sum =  numbers[left] + numbers[right]
-            if (sum > target):
-                right -= 1
-            elif (sum < target):
-                left += 1 
-            else: 
+            #אם המטרה שווה לסכום, נחזיר את המספרים
+            if (sum == target):
                 return numbers[left] , numbers[right]
-
+            #אם המטרה קטנה מהסכום, נזיז את המשתנה הימני יותר אחד שמאלה   
+            elif (sum > target):
+                right -= 1
+            #אם המטרה גדולה מהסכום, נזיז את המשתנה השמאלי יותר אחד ימינה
+            else:
+                left += 1 
+        return []
 ```
