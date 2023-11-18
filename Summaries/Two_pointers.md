@@ -16,12 +16,12 @@ def findTwoElementsEqualToTarget(self, numbers: List[int], target: int) -> List[
         right = len(numbers) - 1
         #ניצור לולאה שתרוץ כל עוד הנקודות לא מתנגשות
         while right > left:
-            sum =  numbers[left] + numbers[right]
+            sum_of_pointers = numbers[left] + numbers[right]
             #אם המטרה שווה לסכום, נחזיר את המספרים
-            if (sum == target):
+            if (sum_of_pointers == target):
                 return numbers[left] , numbers[right]
             #אם המטרה קטנה מהסכום, נזיז את המשתנה הימני יותר אחד שמאלה   
-            elif (sum > target):
+            elif (sum_of_pointers > target):
                 right -= 1
             #אם המטרה גדולה מהסכום, נזיז את המשתנה השמאלי יותר אחד ימינה
             else:
