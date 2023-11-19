@@ -38,7 +38,8 @@ def findTwoElementsEqualToTarget(self, numbers: List[int], target: int) -> List[
 4.נזיז את המשתנים לפי תנאים, כל עוד לא מצאנו את מה שחיפשנו  
 5.אם מצאנו, נעצור, אם לא, נמשיך עד שנמצא או לא נמצא  
 
-חשוב לציין, ניתן להשתמש בטכניקה גם כשיש יותר ממקור נתונים אחד,כלומר כל נקודה במקור אחר.
+> [!IMPORTANT]
+>חשוב לציין, ניתן להשתמש בטכניקה גם כשיש שני מקורות נתונים, כאשר כל נקודה במקור אחר.
 ## תרגילים עם פתרון בעזרת הטכניקה 
 
 
@@ -46,9 +47,6 @@ def findTwoElementsEqualToTarget(self, numbers: List[int], target: int) -> List[
 <p align="center">
   <img src="https://media.giphy.com/media/3ohjURlGvSr6Fzxo2s/giphy.gif" alt="GIF">
 </p>
-
-
-
 
 
 
